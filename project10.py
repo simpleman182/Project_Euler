@@ -1,7 +1,7 @@
 lstnum = [2]
 limit = 2000000
 for num in range(3,limit +1):
-	for i in range(2,num):
+	for i in range(2,int(num**0.5)+1):
 		if num % i == 0:
 			break
 	else:
@@ -9,4 +9,6 @@ for num in range(3,limit +1):
 		lstnum.append(num)
 
 print (sum(lstnum))
-#1709600813 => 200000
+
+# 142913828922
+# Runtime =  21.923160791397095
